@@ -8,11 +8,13 @@ function App() {
 const getFullName = (firstName,lastName)=>{
   return `${firstName} ${lastName}`
 }
+const inputPlaceHolder = 'Enter Your Details'
   return (
     <div className="App">
       <h3>{getFullName(firstName,lastName)} </h3>
       <p>{age} </p>
       <p>{job} </p>
+      <input placeholder={inputPlaceHolder} autoComplete/>
     </div>
   );
 }
