@@ -10,17 +10,17 @@ function App() {
     },
     {
       id:2,
-      title: 'React Application',
+      title: 'Sample Application',
       description:'This blog speaks all about creating react application from scrap'
     },
     { 
       id:3,
-      title: 'React Application',
+      title: 'Mock Application',
       description:'This blog speaks all about creating react application from scrap'
     },
     {
       id:4,
-      title: 'React Application',
+      title: 'React POC',
       description:'This blog speaks all about creating react application from scrap'
     }
   ]
@@ -28,7 +28,7 @@ function App() {
   const blogCards = blogArr.map((item,pos)=>{
     console.log(item)
     return (
-      <BlogCard />   
+      <BlogCard  key={pos} id=  {item.id}title = {item.title} description ={item.description}/>   
     )
   })
   return (

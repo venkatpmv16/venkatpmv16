@@ -1,10 +1,14 @@
 import React from "react"
 
-  const BlogCard =()=>{
+import { dumplogs } from "./Utils";
+
+  const BlogCard =(props)=>{
+    dumplogs(props)
     return(
       <div className='BlogCard'>
-      <h3>Blog Title</h3>
-      <p>Blog Description</p>
+      <h5>{props.id}</h5>
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
       </div> 
     )
 }
